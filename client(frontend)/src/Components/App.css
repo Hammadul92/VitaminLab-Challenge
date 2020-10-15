@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-top: 64px;
+}
+
+
+.container {
+  max-width: 1340px;
+}
+
+
+.mt-8{
+  margin-top: 80px;
+}
+
+.mb-8{
+  margin-bottom: 80px;
+}
+
+.pl-8{
+  padding-left: 80px;
+}
+
+.pr-8{
+  padding-right: 80px;
+}
+
+.pt-8{
+  padding-top: 80px;
+}
+
+.btn-light{
+  border: 1px solid #eee;
+}
+
+.btn-info{
+  background-color: #3399ff;
+  border: none;
+}
+
+.btn-success{
+  background-color: #73ce9a;
+  border: none;
+}
+
+.btn-warning{
+  background-color: #fcd155;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary{
+  background-color: #26154d;
+  border: none;
+}
+
+.btn-lg{
+  font-size: 18px;
+  padding: 0.8em 1.4em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.btn-info:hover{
+  background-color: #3399ff;
+  opacity: 0.8 !important;
+}
+
+.btn-success:hover{
+  background-color: #73ce9a;
+  opacity: 0.8 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active:focus{
+  background-color: #26154d !important;
+  opacity: 0.8 !important;
+}
+
+.btn-warning:hover,
+.btn-warning:active:focus{
+  background-color: #fcd155 !important;
+  opacity: 0.8 !important;
+  color: #fff !important;
+}
+
+.text-main{
+  color: #3399ff;
+}
+
+.text-bg{
+  font-size:  64px;
+}
+
+.text-md{
+  font-size: 20px;
+}
+
+.text-sm{
+  font-size: 13px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.table thead tr th{
+  font-size: 20px;
+  border-color: #eee;
+  border-bottom: none;
+}
+
+.table tbody tr td{
+  border-color: #eee;
+  font-size: 17px;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1){
+  background-color: #f7f8fa;
+  /* background: linear-gradient(to bottom, #585858 0%, #111 100%); */
+}
+
+.form .form-control{
+  height: 50px;
+  border: 1px solid #ddd;
+}
+
+.form .form-control:focus{
+  border-color: #3399ff;
+  box-shadow: none;
+  box-shadow: 0 0 6px #3399ff;
+}
+
+.form textarea.form-control{
+  height: 240px;
+  border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    padding-top: 75px;
+  }
+  .pl-8{
+    padding-left: 0;
+  }
+  
+  .pr-8{
+    padding-right: 0;
+  }
+  .pt-8{
+    padding-top: 0;
+  }
+
+  .table thead tr th{
+    font-size: 14px;
+  }
+
+  .table tbody tr td{
+    font-size: 17px;
+    font-size: 12px;;
+  }
+}
+

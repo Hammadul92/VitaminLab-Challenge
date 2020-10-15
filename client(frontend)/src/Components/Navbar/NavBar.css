@@ -1,0 +1,116 @@
+.navbar.bg-light{
+  box-shadow: 0 4px 2px -2px #ccc;
+  background-color: #fff !important;
+  min-height: 60px;
+}
+
+.navbar-light .navbar-nav .nav-item{
+  line-height: 24px;
+}
+
+.navbar-light .navbar-nav .nav-item .dropdown-menu{
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 5px 5px rgba(24,24,24,.25);
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+  transform: scale(1.2);
+  font-size: 14px;
+  color: #26154d;
+}
+
+.navbar-light .navbar-nav .nav-item:hover > .dropdown-menu{
+  display: block;
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: 300ms ease all;
+  -moz-transition: 300ms ease all;
+  transition: 300ms ease all;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+
+.navbar-light .navbar-nav .nav-item a.main{
+  color: #26154d;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav.mr-auto .nav-item a.main:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #26154d;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-light .navbar-nav.mr-auto .nav-item a.main:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar-light .navbar-nav.mr-auto .nav-item a.main.active:after{
+  width: 100%;
+  left: 0;
+}
+
+.navbar-light .navbar-nav.mr-auto .nav-item{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-light .navbar-nav.ml-auto .nav-item{
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  position: relative;
+}
+
+.navbar-light .navbar-nav.ml-auto .nav-item a{
+  color: #929299;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child{
+  margin-right: 0;
+}
+
+.navbar-light .navbar-toggler{
+  border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-light .navbar-nav.ml-auto .nav-item{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+  }
+  .navbar-light .navbar-nav .nav-item{
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .navbar-light .navbar-nav.mr-auto .nav-item a:after {    
+    background: #fff;
+  }
+
+  .navbar-light .navbar-nav.mr-auto .nav-item a.main:after{
+    background: #fff;
+  }
+
+  .navbar-light .navbar-nav .nav-item .dropdown-menu{
+    box-shadow: none;
+  }
+}
+

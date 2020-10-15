@@ -1,0 +1,80 @@
+
+  .auth-form .form-control{
+    font-size: 14px;
+    height: 45px;
+    border-radius: 0;
+  }
+
+  .auth-form .form-control:disabled{
+    background-color: #eee !important;
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  
+  
+  .auth-form .form-control:focus,
+  .auth-form .form-control:hover,
+  .auth-form .form-control:focus,
+  .auth-form .form-control:hover{
+      border-color: #3399ff;
+      box-shadow: none;
+  }
+
+  .auth-form .form-group{
+    position: relative;
+    margin-top: 35px;
+  }
+
+  .auth-form .form-group .form-control{
+    position: relative;
+    z-index: 2;
+    background: transparent;
+  }
+
+  .auth-form .form-group textarea.form-control{
+    min-height: 120px;
+  }
+
+  .auth-form .form-group .upload-content{
+    width: 100%;
+    height: 45px;
+
+  }
+
+  .auth-form .form-group .img-fluid{
+    border: 1px solid #ced4da;
+    padding: 15px;
+
+  }
+
+  .auth-form .form-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    color: #999;
+    font-size: 15px;
+  }
+
+
+  .auth-form .form-group .form-control:focus + label,
+  .auth-form .form-group .form-control.filled + label {
+    top: -15px;
+    font-size: 13px;
+    color: #3399ff;
+    left: 0;
+    font-weight: 900;
+  }
+
+  .auth-form .form-group.clearfix{
+    height: 35px;
+  }
+
+  .auth-form .form-group.clearfix span{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
